@@ -1,0 +1,81 @@
+@model  Home
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="borderline">
+    <div class="overlay">
+    </div>
+</div>
+<div class="container2">
+    <img id="Banner" src="~/Content/Images/banner2.jpg" alt="Norway" style="width:100%;">
+    <div class="centered">
+        <h1>Night <span class="Bird">Bird</span></h1>
+        <p>@Model.BodyTekst</p>
+        <a href="/Home/About" class="btn btn-primary">JOIN NOW</a>
+    </div>
+    <div class="bottom-right">
+        <img class="White img-fluid" src="~/Content/Images/banner-slidr-dot.png" />
+        <img src="~/Content/Images/banner-slider-dot-active.png" />
+        <img class="White img-fluid" src="~/Content/Images/banner-slidr-dot.png" />
+    </div>
+</div>
+<div class="container">
+
+    <div class="Maininfo">
+        <div class="row">
+            <div class="col-4 text-center">
+                <img class="img-fluid" src="~/Content/Images/about.jpg" />
+            </div>
+            <div class="col-4 indhold text-center">
+                <h1>@Model.Title</h1>
+                <img style="display:block; margin-left: auto; margin-right: auto; margin-bottom: 50px;" src="~/Content/Images/menu_active.png" />
+                <p>@Model.BodyTekst</p>
+                <a href="#" class="btn btn-primary">READ MORE</a>
+            </div>
+            <div class="col-4 text-center">
+                <img class="img-fluid" src="~/Content/Images/about1.jpg" />
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="Event">
+            <h1 class="text-center upcomming" style="margin-bottom: 0;">Upcomming events</h1>
+            <img style="display:block; margin-left: auto; margin-right: auto; margin-bottom: 50px;" src="~/Content/Images/menu_active.png" />
+            <div class="row">
+                <div class="col-6 text-center">
+                    <img class="img-fluid" src="~/Content/Images/event1.jpg" />
+                </div>
+                <div class="col-6">
+                    <div class="col-12">
+                        <h4 class="justify-content-end">@Model.Subtitle</h4>
+                        <p style="font-size: 13px"><i class="fa" style="margin-right: 10px; color: grey">&#xf073;</i>@Model.Date</p>
+                        <p>@Model.BodyTekst</p>
+                        <h5 style="font-size: 10px"><i class="fa" style="margin-right: 10px">&#xf155;</i>@Model.Price Start at @Model.Time</h5>
+                        <div class="countdown">
+                            <div class="circle">
+                                <p class="circletop">00</p>
+                                <p class="circlebottom">DAYS</p>
+                            </div>
+                            <div class="circle">
+                                <p class="circletop">00</p>
+                                <p class="circlebottom">HOURS</p>
+                            </div>
+                            <div class="circle">
+                                <p class="circletop">00</p> 
+                                <p class="circlebottom">MINS</p>
+                            </div>
+                            <div class="circle">
+                                <p class="circletop">00</p>
+                                <p class="circlebottom">SECS</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
